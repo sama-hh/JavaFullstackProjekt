@@ -6,7 +6,15 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String asciiArt1 = FigletFont.convertOneLine("Hello world!");
-        System.out.println(asciiArt1);
+        System.out.println(asciiArt());
     }
+
+    public static String asciiArt() throws IOException {
+        return FigletFont.convertOneLine("Hello world!");
+    }
+
+    public static int sum(int a, int b)  {
+        return a + b;
+    }
+
 }
